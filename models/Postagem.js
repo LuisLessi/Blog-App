@@ -4,19 +4,19 @@ const Schema = mongoose.Schema
 const Postagem = new Schema({
     titulo:{
         type: String,
-        require: true
+        required: true
     },
     slug:{
         type: String,
-        require: true
+        required: true
     },
     descricao:{
         type: String,
-        require: true
+        required: true
     },
     conteudo: {
         type: String,
-        require: true
+        required: true
     },
     categoria:{
         type: Schema.Types.ObjectId,

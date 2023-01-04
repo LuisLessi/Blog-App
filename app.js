@@ -119,7 +119,7 @@ app.get("/postagem/:slug", (req, res) => {
     app.use('/admin', admin)
     app.use('/usuarios', usuarios);
 //Outros
-const PORT = 8081
+const PORT = process.env.Port ||8081
 app.listen(PORT, () =>{
     console.log("Servidor rodando na porta "+ PORT)
 })
